@@ -116,7 +116,7 @@
 
 
 .footer {
-    position: fixed;
+    position: relative;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -152,7 +152,7 @@
 }
 .sidebar ul li a{
     color: darkslategray;
-    font-size: 20px;
+    font-size: 30px;
     text-decoration:none;
 }
 
