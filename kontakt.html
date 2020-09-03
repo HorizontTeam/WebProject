@@ -9,18 +9,55 @@
         <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
 
         <link href="css/style.css" rel="stylesheet" type="text/css"/>
+
+        <style>
+            input[type=text], select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+            }
+
+            input[type=submit] {
+            background-color:#102d5c ;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            }
+
+            input[type=submit]:hover {
+            background-color: #45a049;
+            }
+
+        .kontaktform {
+        border-radius: 5px;
+        background-color: #e6f2ff;
+        margin-bottom: 20px;
+        margin-top:0px;
+        margin-left: 40px;
+        }
+        
+        .kontaktadresse{
+        background-color:white;
+        margin-left: 40px;
+        }
+</style>
+
     </head>
     <body>
-
-
-
+        
         <div class="header">
             <img class="logo" src="img/logo.png" alt="">
             <a href="index.html" class="logo">Horizont Web-Entwicklungswelt
             </a>
          
         </div>
-
 
         <div class="row">
             <div class="column-s">
@@ -51,98 +88,42 @@
 
                         </li>
                     </ul>
+                    
+                    <div class="kontaktadresse">
+                        <h3>Horizont <br>Programmierung & IT-Lösungen</h3>
+                <address>
+                    E-Mail Uns <a href="mailto:info@horizontwebentwicklung.com">@Horizont Web</a>.<br>
+                    Besuchen Sie uns at: <a href="https://www.horizontwebentwicklung.com">Horizont Web Seite</a><br>
+                    Telefon: +49 - 511 - 000 000 0<br>
+                    Fax: +49 - 511 - 000 000 <br>
+                    Bismarckstraße 2, 30173 Hannover
+                    </address>
+                    </div>
                 </div>
             </div>
 
             <div class="column-l">
-                <h2>Column l</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
-                           <button class="clickme">click me </button>
+                <h2 class="kontaktform">Kontaktormular</h2>
+                        
+                <div class="kontaktform">
+                    <form>
+                        <label for="fname">Vorname</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Ihr Name..">
+                        <label for="lname">Nachname</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Ihr Nachname..">
+                        <label for="country">Land</label>
+                        <input type="text" id="country" name="country" placeholder="Ihr Land...">
+                        <label for="subject">Thema</label>
+                        <textarea id="subject" name="subject" placeholder="Schreiben Sie.." style="height:50px"></textarea>
 
+                        <input type="submit" value="Einsenden">
+                    </form>
             </div>
-
-
-        </div><div class="row shadow-all">
-            <div class="column-s">
-                <h2>Column s</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
-                <button class="clickme">click me </button>
             </div>
-
-            <div class="column-l">
-                <h2>Column l</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
-            </div>
-
-
-        </div><div class="row">
-            <div class="column-s shadow-top-bottom-left">
-                <h2>Column s</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
-                <button class="clickme">click me </button>
-            </div>
-
-            <div class="column-l">
-                <h2>Column l</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
-            </div>
-
-
-        </div><div class="row">
-            <div class="column-s shadow-top-bottom-right">
-                <h2>Column s</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
-                <button class="clickme">click me </button>
-            </div>
-
-            <div class="column-l">
-                <h2>Column l</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
-            </div>
-
-
-        </div><div class="row">
-            <div class="column-s">
-                <h2>Column s</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
-                <button class="clickme">click me </button>
-            </div>
-
-            <div class="column-l">
-                <h2>Column l</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
-            </div>
-
-
-        </div><div class="row">
-
-            <div class="column-l">
-                <h2>Column l</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
-            </div>
-
-
         </div>
-        <div class="row">
-            <div class="column-s">
-                <h2>Column s</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
-                <button class="clickme">click me </button>
-            </div>
 
-
-
+        
+        <div class="footer shadow-top"> Copyright &copy; 2020 - <a  href="index.html">Horizont Webentwicklungswelt</a>
         </div>
-        <div class="row">
-            <div class="column">
-                <h2>Column viewport</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
-                <button class="clickme">click me </button>
-            </div>
-
-
-
-        </div>
-        <div class="footer shadow-top">this is the footer</div>
     </body>
 </html>
