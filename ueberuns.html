@@ -2,13 +2,61 @@
 
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Horizont Über uns</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/5/58/Padlock-olive.svg" type="image/x-ico" />
         <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
 
         <link href="css/style.css" rel="stylesheet" type="text/css"/>
+        <style>
+
+            .column-s img {
+                opacity: 0.8; 
+                cursor: pointer; 
+                width: 5vw;
+            }
+
+            .column-s img:hover {
+                opacity: 1;
+            }
+
+            /* Clear floats after the columns */
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+            /* The expanding image container */
+            .container {
+                position: relative;
+                display: none;
+            }
+
+            /* Expanding image text */
+            #imgtext {
+                position: absolute;
+                bottom: 15px;
+                left: 15px;
+                color: white;
+                font-size: 20px;
+            }
+
+            /* Closable button inside the expanded image */
+            .closebtn {
+                position: absolute;
+                top: 10px;
+                right: 15px;
+                color: white;
+                font-size: 35px;
+                cursor: pointer;
+            }
+
+
+
+        </style>
+
     </head>
     <body>
 
@@ -16,9 +64,9 @@
 
         <div class="header">
             <img class="logo" src="img/logo.png" alt="">
-            <a href="index.html" class="logo">Horizont Web-Entwicklungswelt
+            <a href="#default" class="logo">Horizont Web-Entwicklungswelt
             </a>
-         
+            
         </div>
 
 
@@ -27,11 +75,11 @@
                 <div class="sidebar">
                     <ul  class="">
                         <li>
-                            <a class="active" href="index.html">Home</a>  
+                            <a href="index.html">Home</a>
 
                         </li>
                         <li>
-                            <a href="ueberuns.html">Über Uns</a>
+                            <a href="ueberuns.html">Über uns</a>
 
                         </li>
                         <li>
@@ -43,11 +91,11 @@
 
                         </li>
                         <li>
-                            <a href="referenzen.html">Referenzen</a>
+                            <a href="refrenzen.html">Referense</a>
 
                         </li>
                         <li>
-                            <a href="kontakt.html">Kontakt</a>
+                            <a href="kontankt.html">Kontankt</a>
 
                         </li>
                     </ul>
@@ -55,95 +103,50 @@
             </div>
 
             <div class="column-l">
-                <h2>Column l</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
-                           <button class="clickme">click me </button>
+                <h2>Über uns</h2>
+
+                <p>Wer wir sind
+                    Die TurboAd GmbH wurde 2013 gegründet. Wir sind ein kleines, multikulturelles und ambitioniertes Team mit vielen neuen Ideen für die Online-Welt.
+
+                    Neben einem Online Marketing Projekt arbeiten wir derzeit an einer mobile App aus dem Social Media Bereich und betreuen externe Kunden im Bereich der Webentwicklung.
+
+                    Um weiter zu wachsen suchen wir Dich als erfahrenen Web-Entwickler (w/m/d) für unser Büro in Berlin Schöneberg.</p>
+
 
             </div>
-
-
-        </div><div class="row shadow-all">
+        </div>
+        <div class="row" >
             <div class="column-s">
-                <h2>Column s</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
-                <button class="clickme">click me </button>
+                <img src="https://github.com/baserismail/HorizontWebProject/blob/master/img/team/abdullah1.jpg?raw=true" alt="abdullah" onclick="myFunction(this);">
+                <img src="https://github.com/baserismail/HorizontWebProject/blob/master/img/team/adem1.jpg?raw=true" alt="adem" onclick="myFunction(this);">
+                <img src="https://github.com/baserismail/HorizontWebProject/blob/master/img/team/ahmed.jpg?raw=true" alt="ahmed" onclick="myFunction(this);">
+                <img src="https://github.com/baserismail/HorizontWebProject/blob/master/img/team/hamid1.jpg?raw=true" alt="hamid" onclick="myFunction(this);">
+                <img src="https://github.com/baserismail/HorizontWebProject/blob/master/img/team/ismail1.jpg?raw=true" alt="ismail" onclick="myFunction(this);">
+
+
             </div>
+
 
             <div class="column-l">
-                <h2>Column l</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+                <span onclick="this.parentElement.style.display = 'none'" class="closebtn">&times;</span>
+                <img class="shadow-bottom-right" id="expandedImg" style="width:70%; margin-top:-14%;" >
+                <div id="imgtext"></div>
             </div>
-
-
-        </div><div class="row">
-            <div class="column-s shadow-top-bottom-left">
-                <h2>Column s</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
-                <button class="clickme">click me </button>
-            </div>
-
-            <div class="column-l">
-                <h2>Column l</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
-            </div>
-
-
-        </div><div class="row">
-            <div class="column-s shadow-top-bottom-right">
-                <h2>Column s</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
-                <button class="clickme">click me </button>
-            </div>
-
-            <div class="column-l">
-                <h2>Column l</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
-            </div>
-
-
-        </div><div class="row">
-            <div class="column-s">
-                <h2>Column s</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
-                <button class="clickme">click me </button>
-            </div>
-
-            <div class="column-l">
-                <h2>Column l</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
-            </div>
-
-
-        </div><div class="row">
-
-            <div class="column-l">
-                <h2>Column l</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
-            </div>
-
-
         </div>
-        <div class="row">
-            <div class="column-s">
-                <h2>Column s</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
-                <button class="clickme">click me </button>
-            </div>
+        <script>
+            function myFunction(imgs) {
+                var expandImg = document.getElementById("expandedImg");
+                var imgText = document.getElementById("imgtext");
+                expandImg.src = imgs.src;
+                imgText.innerHTML = imgs.alt;
+                expandImg.parentElement.style.display = "block";
+            }
+        </script>
 
 
 
-        </div>
-        <div class="row">
-            <div class="column">
-                <h2>Column viewport</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
-                <button class="clickme">click me </button>
-            </div>
 
 
-
-        </div>
-        <div class="footer shadow-top flex-container"> Copyright &copy; 2020 - <a  href="index.html">Horizont Webentwicklungswelt</a>
-        </div>
+        <div class="footer shadow-top">this is the footer</div>
     </body>
 </html>
